@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-key = '2a8aec490d144be484cc5961f287e81a'
+key = os.getenv("AZURE_TRANSLATION_API_KEY")
 region = 'eastus2'
 endpoint = 'https://api.cognitive.microsofttranslator.com'
 
