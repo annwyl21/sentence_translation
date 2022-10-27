@@ -6,7 +6,8 @@ import os
 app = Flask(__name__)
 
 key = os.getenv("AZURE_TRANSLATION_API_KEY")
-region = 'eastus2'
+print(key)
+region = 'global'
 endpoint = 'https://api.cognitive.microsofttranslator.com'
 
 def detect_language(text, key, region, endpoint):
